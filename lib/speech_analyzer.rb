@@ -14,15 +14,12 @@ class SpeechAnalyzer
         results = {}
         xml_doc.xpath("//SPEECH").each do |speech|
             speaker_name = ""
-            speech.children.map do |speaker|
-                if speaker.name == "SPEAKER"
-                    speaker_name = speaker.text.to_sym
-                    break
-                end
-            end
-            next if speaker_name == IGNORE_SPEAKER_NAME
             speech_detail_with_count = {}
-            speech.children.group_by(&:name).each { |k,v| speech_detail_with_count[k] = v.length }
+            speech.children.group_by(&:name).each { |speech_detail_key, speech_detail|
+                speech_detail_with_count[speech_detail_key] = speech_detail.length
+                speaker_name = speech_detail[0].text.to_sym if speech_detail_key == "SPEAKER" && speech_detail.length
+            }
+            next if speaker_name == IGNORE_SPEAKER_NAME
             results[speaker_name] = (results[speaker_name] || 0)
             results[speaker_name] = results[speaker_name] + speech_detail_with_count["LINE"] if speech_detail_with_count.key?("LINE")
         end
