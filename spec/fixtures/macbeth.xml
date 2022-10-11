@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAY>
+    <ACT>
+        <TITLE>ACT I</TITLE>
+        <SCENE>
+            <TITLE>SCENE I. A desert place.</TITLE>
+            <SPEECH>
+                <SPEAKER>MACBETH</SPEAKER>
+                <LINE>When shall we three meet again</LINE>
+                <LINE>In thunder, lightning, or in rain?</LINE>
+            </SPEECH>
+            <SPEECH>
+                <SPEAKER>FLEANCE</SPEAKER>
+                <LINE>Hey!</LINE>
+                <LINE>There to meet with Macbeth.</LINE>
+            </SPEECH>
+            <SPEECH>
+                <SPEAKER>ALL</SPEAKER>
+                <LINE>Fair is foul, and foul is fair:</LINE>
+                <LINE>Hover through the fog and filthy air.</LINE>
+            </SPEECH>
+        </SCENE>
+    </ACT>
+    <ACT>
+        <TITLE>ACT II</TITLE>
+        <SCENE>
+            <TITLE>SCENE II. A camp near Forres.</TITLE>
+            <SPEECH>
+                <SPEAKER>FLEANCE</SPEAKER>
+                <LINE>The moon is down; I have not heard the clock.</LINE>
+            </SPEECH>
+            <SPEECH>
+                <SPEAKER>BANQUO</SPEAKER>
+                <LINE>Hold, take my sword. There's husbandry in heaven;</LINE>
+                <LINE>Their candles are all out. Take thee that too.</LINE>
+                <LINE>A heavy summons lies like lead upon me,</LINE>
+                <LINE>And yet I would not sleep: merciful powers,</LINE>
+                <LINE>Restrain in me the cursed thoughts that nature</LINE>
+                <LINE>Gives way to in repose!</LINE>
+                <STAGEDIR>Enter MACBETH, and a Servant with a torch</STAGEDIR>
+                <LINE>Give me my sword.</LINE>
+                <LINE>Who's there?</LINE>
+            </SPEECH>
+        </SCENE>
+    </ACT>
+</PLAY> 
